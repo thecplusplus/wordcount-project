@@ -1,0 +1,9 @@
+<h1>Word Count</h1>
+<br/>
+<a href="{% url 'home' %}">Start Again</a>
+<h2>Total words = {{words}}</h2>
+<br/>
+{% for x,y in sortwords %}
+{{x}}:{{y}}
+<br/>
+{% endfor %}
